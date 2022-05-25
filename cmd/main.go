@@ -1,11 +1,7 @@
 package main
 
-import (
-	"github.com/praj31/cli_counter/pkg/cache"
-)
+import "github.com/praj31/cli_counter/pkg/commands"
 
 func main() {
-	rdb := cache.GetRedisClient()
-
-	rdb.ListCounters()
+	commands.Launch()
 }
